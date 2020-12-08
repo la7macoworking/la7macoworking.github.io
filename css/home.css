@@ -1,0 +1,273 @@
+:root {
+  --banner_font: normal normal normal 14px/1.4em raleway-semibold,raleway,sans-serif;
+  --about_us_title_font: normal normal bold 35px/1.4em raleway-semibold,raleway,sans-serif;
+  --about_us_content_font: normal normal normal 16px/1.4em raleway,sans-serif;
+  --spaces_title_font: normal normal bold 25px/1.4em raleway-semibold,raleway,sans-serif;
+  --spaces_content_font: normal normal normal 16px/1.4em raleway,sans-serif;
+  --request_office_button_font: normal normal bold 14px/1.4em raleway-semibold,raleway,sans-serif;
+  --contact_title_font: normal normal bold 35px/1.4em raleway-semibold,raleway,sans-serif;
+}
+
+/* banner */
+#banner {
+  background-image: url("../img/banner.jpg");
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid var(--light_green);
+  border-width: 5px 2px;
+}
+#banner .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: var(--white);
+  font: var(--banner_font);
+}
+#banner .content img {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 200px;
+}
+#banner .content h1 {
+  color: var(--light_green);
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+}
+#banner .content h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px 0;
+  line-height: 1.4em;
+}
+#banner .content .info {
+  text-align: center;
+}
+
+/* Who we are */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+#about h2 {
+  font: var(--about_us_title_font);
+  color: var(--dark_blue);
+}
+#about p {
+  margin: 10px 0 10px 0;
+  font: var(--about_us_content_font);
+}
+
+/* Our spaces */
+#spaces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+#spaces h2 {
+  font: var(--spaces_title_font);
+  color: var(--light_green);
+}
+#spaces .office {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#spaces .office img {
+  width: 300px;
+  border: 2px solid var(--light_green);
+  border-radius: 15px;
+  margin: 20px 0;
+}
+#spaces .office .content h3 {
+  font: var(--spaces_title_font);
+  color: var(--dark_blue);
+  text-align: center;
+}
+#spaces .office .content p {
+  font: var(--spaces_content_font);
+  margin: 5px 0;
+}
+#spaces .office .content a.request {
+  display: inline-block;
+  background-color: var(--light_green);
+  color: var(--white);
+  text-align: center;
+  border-radius: 15px;
+  padding: 8px 0;
+  margin-top: 10px;
+  font: var(--request_office_button_font);
+  width: 100%;
+  box-sizing: border-box;
+}
+#spaces .office .content .request i {
+  font-size: 18px;
+}
+
+/* Payment from cellphone */
+#payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#payment h2 {
+  font: var(--spaces_title_font);
+  color: var(--light_green);
+}
+#payment p {
+  font: var(--spaces_content_font);
+  color: var(--dark_blue);
+  margin: 10px 0;
+}
+#payment img {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid var(--light_green);
+}
+
+/* Contact us */
+#payment .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#payment .content .contact {
+  background-color: #000;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+}
+#payment .content .contact h3 {
+  font: var(--contact_title_font);
+  color: var(--light_green);
+}
+#payment .content .contact p {
+  color: #fff;
+}
+#payment .content .contact form {
+  border: 3px solid var(--light_green);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+#payment .content .contact form input,
+#payment .content .contact form textarea,
+#payment .content .contact form select {
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px 0;
+}
+#payment .content .contact form input.button {
+  background-color: var(--light_green);
+  font: var(--spaces_content_font);
+  color: #fff;
+  cursor: pointer;
+}
+#payment .content .contact .social {
+  margin: 10px 0;
+}
+#payment .content .contact .social a {
+  color: #fff;
+}
+
+/* Novelties */
+#novelties h2 {
+  font: var(--spaces_title_font);
+  color: var(--light_green);
+}
+#novelties .content {
+  margin: 20px;
+}
+#novelties .youtube .spidochetube_inner {
+ margin: 20px 0;
+}
+
+/* Media queries */
+@media screen and (min-width: 900px) {
+  /* banner */
+  #banner .content {
+    flex-direction: row;
+    max-width: var(--header_max_width);
+    margin: auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  #banner .content .info {
+    max-width: 600px;
+  }
+  #banner .content img {
+    width: 300px;
+  }
+  #banner .content h1 {
+    font-size: 28px;
+  }
+  #banner .content h2 {
+    font-size: 34px;
+  }
+  #banner .content p {
+    font-size: 18px;
+  }
+
+  /* Who we are */
+  #about {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 30px;
+  }
+
+  /* Our spaces */
+  #spaces {
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  #spaces .office {
+    flex-direction: row;
+    margin: 20px 0;
+  }
+  #spaces .office img {
+    width: 400px;
+    margin: 0;
+  }
+  #spaces .office .content {
+    padding: 0 20px;
+  }
+  #spaces .office.inverted {
+    flex-direction: row-reverse;
+  }
+
+  /* Payment from cellphone */
+  #payment {
+    align-items: flex-start;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  #payment img {
+    width: 400px;
+  }
+
+  /* Contact us */
+  #payment .content {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px 0;
+  }
+  #payment .content .contact {
+    margin: 0 0 0 20px;
+  }
+
+  /* Novelties */
+  #novelties .content {
+    max-width: 900px;
+    margin: auto;
+  }
+}
